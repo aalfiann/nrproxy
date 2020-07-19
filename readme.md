@@ -30,7 +30,7 @@ $ npm install nrproxy
 
 <!-- Get a specific version -->
 <!-- Recommended for production sites! -->
-<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0.5/src/nrproxy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0.6/src/nrproxy.min.js"></script>
 ```
 
 ### Usage
@@ -41,6 +41,9 @@ If you have your own web proxy and want to allow it
 ```javascript
 NRProxy('yourdomain.com, domain2.com, domain3.com');
 ```
+Note: 
+- If you allow many domains, then the rejected proxy will always redirected to the first array of domain.
+- Be careful to use `localhost`, because some web proxy have already handle this.
 
 ### Example
 ```html
@@ -50,7 +53,7 @@ NRProxy('yourdomain.com, domain2.com, domain3.com');
         <H1>NRProxy Example</H1>
         <script src="https://cdn.jsdelivr.net/npm/nrproxy/src/nrproxy.min.js"></script>
         <script>
-            NRProxy('localhost:1313, yourdomain.com');
+            NRProxy('yourdomain.com, localhost:1313');
         </script>
     </body>
 </html>

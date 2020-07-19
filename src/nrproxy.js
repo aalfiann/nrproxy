@@ -24,7 +24,7 @@ window.NRProxy = function (whitelist, debug) {
         if (debug) {
           return 'Protected!!!';
         } else {
-          ua = ua.replace(domi, whitelist);
+          ua = ua.replace(domi, mm[0]);
           window.location.href = ua;
         }
       }
