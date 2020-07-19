@@ -1,4 +1,4 @@
-# nrproxy
+# NRProxy
 ![Version](https://img.shields.io/github/package-json/v/aalfiann/nrproxy)
 [![Build Status](https://travis-ci.com/aalfiann/nrproxy.svg?branch=master)](https://travis-ci.com/aalfiann/nrproxy)
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/standard/semistandard)
@@ -13,7 +13,7 @@ This library is worked as client-side in the browser, to protect your website fr
 $ npm install nrproxy
 
 // then use with path
-<script src="node_modules/nrproxy/src/nrproxy.min.js"></script>
+<script src="node_modules/nrproxy/src/nrproxy.js"></script>
 ```
 
 **Or simply use with CDN**
@@ -30,7 +30,7 @@ $ npm install nrproxy
 
 <!-- Get a specific version -->
 <!-- Recommended for production sites! -->
-<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0.4/src/nrproxy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0.5/src/nrproxy.min.js"></script>
 ```
 
 ### Usage
@@ -40,4 +40,18 @@ NRProxy('yourdomain.com');
 If you have your own web proxy and want to allow it
 ```javascript
 NRProxy('yourdomain.com, domain2.com, domain3.com');
+```
+
+### Example
+```html
+<html>
+    <head></head>
+    <body>
+        <H1>NRProxy Example</H1>
+        <script src="https://cdn.jsdelivr.net/npm/nrproxy/src/nrproxy.min.js"></script>
+        <script>
+            NRProxy('localhost:1313, yourdomain.com');
+        </script>
+    </body>
+</html>
 ```

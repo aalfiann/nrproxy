@@ -4,8 +4,8 @@ const fs = require('fs');
 
 var js = fs.readFileSync('src/nrproxy.js', 'utf8');
 const dom = new JSDOM('<html><head></head><body><script>' + js + '</script></body></html>', {
-  url: 'http://localhost',
-  referrer: 'http://localhost',
+  url: 'http://localhost/',
+  referrer: 'http://localhost/',
   contentType: 'text/html',
   includeNodeLocations: true,
   storageQuota: 10000000,

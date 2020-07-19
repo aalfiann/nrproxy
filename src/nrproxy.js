@@ -39,7 +39,5 @@ window.NRProxy = function (whitelist, debug) {
       }
     }
   }
-  if (debug) {
-    return 'Passed!!!';
-  }
+  if (debug) return 'Passed!!!';
 };
