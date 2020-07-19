@@ -1,0 +1,28 @@
+{
+  "name": "nrproxy",
+  "version": "1.0.0",
+  "description": "NRProxy means No Reverse Proxy",
+  "main": "src/nrproxy.js",
+  "scripts": {
+    "test": "semistandard && node test/nrproxy-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aalfiann/nrproxy.git"
+  },
+  "keywords": [
+    "proxy",
+    "reverse-proxy",
+    "no-reverse-proxy"
+  ],
+  "author": "M ABD AZIZ ALFIAN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aalfiann/nrproxy/issues"
+  },
+  "homepage": "https://github.com/aalfiann/nrproxy#readme",
+  "devDependencies": {
+    "jsdom": "^16.3.0",
+    "semistandard": "^14.2.2"
+  }
+}
