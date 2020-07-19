@@ -13,24 +13,24 @@ This library is worked as client-side in the browser, to protect your website fr
 $ npm install nrproxy
 
 // then use with path
-<script src="node_modules/nrproxy/src/nrproxy.js"></script>
+<script src="node_modules/nrproxy/dist/nrproxy.js"></script>
 ```
 
 **Or simply use with CDN**
 ```html
 <!-- Always get the latest version -->
 <!-- Not recommended for production sites! -->
-<script src="https://cdn.jsdelivr.net/npm/nrproxy/src/nrproxy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nrproxy/dist/nrproxy.js"></script>
 
 <!-- Get minor updates and patch fixes within a major version -->
-<script src="https://cdn.jsdelivr.net/npm/nrproxy@1/src/nrproxy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nrproxy@1/dist/nrproxy.js"></script>
 
 <!-- Get patch fixes within a minor version -->
-<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0/src/nrproxy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0/dist/nrproxy.js"></script>
 
 <!-- Get a specific version -->
 <!-- Recommended for production sites! -->
-<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0.6/src/nrproxy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0.7/dist/nrproxy.js"></script>
 ```
 
 ### Usage
@@ -43,7 +43,7 @@ NRProxy('yourdomain.com, domain2.com, domain3.com');
 ```
 Note: 
 - If you allow many domains, then the rejected proxy will always redirected to the first array of domain.
-- Be careful to use `localhost`, because some web proxy have already handle this.
+- Please use file `nrproxy.js` from `dist` directory, because web proxies out there is very smart, we just need to obfuscated it.
 
 ### Example
 ```html
@@ -51,7 +51,7 @@ Note:
     <head></head>
     <body>
         <H1>NRProxy Example</H1>
-        <script src="https://cdn.jsdelivr.net/npm/nrproxy/src/nrproxy.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/nrproxy/dist/nrproxy.js"></script>
         <script>
             NRProxy('yourdomain.com, localhost:1313');
         </script>
