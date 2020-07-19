@@ -1,6 +1,6 @@
 {
   "name": "nrproxy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "NRProxy means No Reverse Proxy",
   "main": "src/nrproxy.js",
   "scripts": {

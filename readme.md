@@ -30,7 +30,7 @@ $ npm install nrproxy
 
 <!-- Get a specific version -->
 <!-- Recommended for production sites! -->
-<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0.3/src/nrproxy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0.4/src/nrproxy.min.js"></script>
 ```
 
 ### Usage
