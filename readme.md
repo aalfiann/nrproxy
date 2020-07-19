@@ -3,8 +3,10 @@
 [![Build Status](https://travis-ci.com/aalfiann/nrproxy.svg?branch=master)](https://travis-ci.com/aalfiann/nrproxy)
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/standard/semistandard)
 ![License](https://img.shields.io/github/license/aalfiann/nrproxy)  
-NRProxy means No Reverse Proxy (for browser only).  
-This library is to protect your website from unkown web proxies out there.
+NRProxy means No Reverse Proxy (for browser only).
+
+### How this work
+This library is worked as client-side in the browser, to protect your website from unkown web proxies out there. The rejected web proxies will be turn into your backlink and redirect the visitor to your original website automatically.
 
 ### Install using NPM
 ```bash
@@ -28,7 +30,7 @@ $ npm install nrproxy
 
 <!-- Get a specific version -->
 <!-- Recommended for production sites! -->
-<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0.0/src/nrproxy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nrproxy@1.0.1/src/nrproxy.min.js"></script>
 ```
 
 ### Usage
